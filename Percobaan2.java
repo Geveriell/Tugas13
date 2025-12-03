@@ -1,5 +1,3 @@
-//percobaan 2
- 
 import java.util.Scanner;
 
 public class Percobaan2 {
@@ -7,8 +5,10 @@ public class Percobaan2 {
     // Fungsi rekursif
     static int hitungPangkat(int bilangan, int pangkat) {
         if (pangkat == 0) {
+            System.out.print("1");
             return 1;
         } else {
+            System.out.print(bilangan + "x");
             return bilangan * hitungPangkat(bilangan, pangkat - 1);
         }
     }
@@ -20,6 +20,7 @@ public class Percobaan2 {
         bilangan = sc.nextInt();
         System.out.print("Masukkan pangkat: ");
         pangkat = sc.nextInt();
-        System.out.println(hitungPangkat(bilangan, pangkat));
+        int hasil = hitungPangkat(bilangan, pangkat);
+        System.out.println(" = " + hasil);
     }
 }
