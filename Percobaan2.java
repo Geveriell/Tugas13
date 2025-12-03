@@ -1,3 +1,5 @@
+//percobaan 2
+ 
 import java.util.Scanner;
 
 public class Percobaan2 {
